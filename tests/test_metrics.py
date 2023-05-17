@@ -24,3 +24,11 @@ def test_mean():
     arr = [1, 2, 3 ,4, 5]
     mean = compute_mean(arr)
     assert mean == 3
+
+def test_min:
+    arr = [1, 2, 3, 4, 5]
+    min = compute_min(arr)
+    assert min == 1
+
+def test_max:
+    

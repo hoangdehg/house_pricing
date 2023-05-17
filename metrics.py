@@ -11,4 +11,10 @@ def compute_mean(list_1):
     for i in list_1:
         sum_list_1+=i
     return sum_list_1/a
-compute_mean()
+
+def compute_min():
+    pass
+
+def compute_max():
+    pass
+
