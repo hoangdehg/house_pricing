@@ -32,7 +32,7 @@ def test_min():
 
 def test_max():
     arr = [1, 2, 3, 4, 5]
-    min = compute_max(arr)
+    max = compute_max(arr)
     assert max == 5
 
 def test_median50():
