@@ -1,4 +1,4 @@
-from metrics import compute_rmse, compute_mean
+from metrics import compute_rmse, compute_mean, compute_min, compute_max, compute_hiepphuongsai, compute_phuongsai, compute_correlation, compute_median25, compute_median50, compute_median75
 import numpy as np
 from math import sqrt
 from sklearn.metrics import mean_squared_error
@@ -25,10 +25,12 @@ def test_mean():
     mean = compute_mean(arr)
     assert mean == 3
 
-def test_min:
+def test_min():
     arr = [1, 2, 3, 4, 5]
     min = compute_min(arr)
     assert min == 1
 
-def test_max:
-    
+def test_max():
+    arr = [1, 2, 3, 4, 5]
+    min = compute_max(arr)
+    assert max == 5

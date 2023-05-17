@@ -26,3 +26,20 @@ def compute_max(list_3):
             max_list_3 = i
     return max_list_3 
 
+def compute_median50():
+    pass
+
+def compute_median25():
+    pass
+
+def compute_median75():
+    pass
+
+def compute_hiepphuongsai():
+    pass 
+
+def compute_phuongsai():
+    pass
+
+def compute_correlation():
+    pass
