@@ -1,4 +1,4 @@
-from metrics import compute_rmse
+from metrics import compute_rmse, compute_mean
 import numpy as np
 from math import sqrt
 from sklearn.metrics import mean_squared_error
@@ -20,3 +20,7 @@ def test_compute_rmse():
     rmse = sqrt(mse)
     assert rmse == sqrt(0.1)
 
+def test_mean():
+    arr = [1, 2, 3 ,4, 5]
+    mean = compute_mean(arr)
+    assert mean == 3
