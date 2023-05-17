@@ -13,16 +13,16 @@ def compute_mean(list_1):
     return sum_list_1/a
 
 def compute_min(list_2):
-    min_list_2=0
+    min_list_2=list_2[0]
     for i in list_2:
         if i < min_list_2:
             min_list_2 = i
     return min_list_2        
 
 def compute_max(list_3):
-    min_list_3=0
+    max_list_3=list_3[0]
     for i in list_3:
-        if i < min_list_3:
-            min_list_3 = i
-    return min_list_3 
+        if i > max_list_3:
+            max_list_3 = i
+    return max_list_3 
 
