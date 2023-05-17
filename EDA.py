@@ -20,3 +20,6 @@ idsDupli = idsTotal - idsUnique # Tính số lượng các giá trị bị trùn
 df_train.drop("Id", axis = 1, inplace = True) # axis = 1 là loại bỏ cột, = 0 là hàng. Inplace = True là loại bỏ ngay trên data gốc, nếu không sẽ tạo một bản sao mới mà không ảnh hưởng bản gốc
 #Loc ra nhung bien
 df_train = df_train[df_train.GrLivArea < 4000]
+
+
+def 
