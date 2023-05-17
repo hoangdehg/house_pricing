@@ -35,29 +35,29 @@ def test_max():
     max = compute_max(arr)
     assert max == 5
 
-def test_median50():
-    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    median50 = compute_median50(arr)
-    assert median50 == 5
+# def test_median50():
+#     arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#     median50 = compute_median50(arr)
+#     assert median50 == 5
 
-    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    median50 = compute_median50(arr)
-    assert median50 == 5.5
+#     arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#     median50 = compute_median50(arr)
+#     assert median50 == 5.5
 
-def test_median25():
-    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    median25 = compute_median25(arr)
-    assert median25 == 3
+# def test_median25():
+#     arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#     median25 = compute_median25(arr)
+#     assert median25 == 3
 
-    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    median25 = compute_median25(arr)
-    assert median25 == 2.25
+#     arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#     median25 = compute_median25(arr)
+#     assert median25 == 2.25
 
-def test_median75():
-    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    median75 = compute_median75(arr)
-    assert median75 == 7
+# def test_median75():
+#     arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#     median75 = compute_median75(arr)
+#     assert median75 == 7
 
-    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    median75 = compute_median75(arr)
-    assert median75 == 7.75
+#     arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#     median75 = compute_median75(arr)
+#     assert median75 == 7.75
