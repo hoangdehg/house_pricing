@@ -4,3 +4,4 @@ pandas-profiling==3.6.6
 matplotlib
 seaborn
 scikit-learn
+pytest
