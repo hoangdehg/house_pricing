@@ -1,2 +1,5 @@
-def compute_rmse():
-    pass
+import math
+
+def compute_rmse(y_pred,y):
+    rmse = math.sqrt(sum((y_pred - y)**2)/len(y))
+    return rmse
