@@ -72,3 +72,9 @@ def test_hiepphuongsai():
     y = [5, 7, 6, 8, 9, 10]
     hiepphuongsai = compute_hiepphuongsai(x, y)
     assert hiepphuongsai == 2.6
+
+def test_correlation():
+    x = [20, 22, 25, 24, 23, 26]
+    y = [5, 7, 6, 8, 9, 10]
+    correlation = round(compute_correlation(x, y), 3)
+    assert correlation == 0.643
