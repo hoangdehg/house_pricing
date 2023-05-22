@@ -26,14 +26,39 @@ def compute_max(list_3):
             max_list_3 = i
     return max_list_3 
 
-def compute_median50():
-    pass
+def compute_median50(l1):
+    l1.sort()
+    if len(l1) % 2 != 0:
+        for i in range(len(l1)):
+            if l1[-i-1] == l1[i]:
+                median50 = l1[i]
+        print(median50)
+    else:
+        median50 = (l1[len(l1)//2] + l1[len(l1)//2 - 1]) / 2     
+    return median50
 
-def compute_median25():
-    pass
-
-def compute_median75():
-    pass
+def compute_median25(l1):
+  import math
+  import statistics
+  l1.sort()
+  if len(l1) % 2 != 0:
+    new_l1=l1[:math.ceil(len(l1)/2)]
+  else:
+    new_l1=l1[:(len(l1)//2)]
+  median25 = statistics.median(new_l1)
+  return median25
+def compute_median75(l1):
+  import math
+  import statistics
+  l1.sort()
+  new_l1=[]
+  if len(l1) % 2 != 0:
+    new_l1=l1[(len(l1)//2 ): ]
+  else:
+    new_l1=l1[(len(l1)//2 ): ]
+  median75 = statistics.median(new_l1)
+  return median75
+    
 
 def compute_hiepphuongsai(L1,L2):
     
