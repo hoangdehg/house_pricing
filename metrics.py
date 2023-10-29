@@ -26,20 +26,69 @@ def compute_max(list_3):
             max_list_3 = i
     return max_list_3 
 
-def compute_median50():
-    pass
+def compute_median50(l1):
+    l1.sort()
+    if len(l1) % 2 != 0:
+        for i in range(len(l1)):
+            if l1[-i-1] == l1[i]:
+                median50 = l1[i]
+        print(median50)
+    else:
+        median50 = (l1[len(l1)//2] + l1[len(l1)//2 - 1]) / 2     
+    return median50
 
-def compute_median25():
-    pass
+def compute_median25(l1):
+  import math
+  import statistics
+  l1.sort()
+  if len(l1) % 2 != 0:
+    new_l1=l1[:math.ceil(len(l1)/2)]
+  else:
+    new_l1=l1[:(len(l1)//2)]
+  median25 = statistics.median(new_l1)
+  return median25
+def compute_median75(l1):
+  import math
+  import statistics
+  l1.sort()
+  new_l1=[]
+  if len(l1) % 2 != 0:
+    new_l1=l1[(len(l1)//2 ): ]
+  else:
+    new_l1=l1[(len(l1)//2 ): ]
+  median75 = statistics.median(new_l1)
+  return median75
+    
 
-def compute_median75():
-    pass
+def compute_hiepphuongsai(L1,L2):
+    
+  if len(L1)!=len(L2):
+    print("Khong the tinh covariance")
+  else:
+    avr_L1=sum(L1)/len(L1)
+    avr_L2=sum(L2)/len(L2)
+    new_L1=[(i-avr_L1) for i in L1]
+    new_L2=[(j-avr_L2) for j in L2]
+    new_L3=[a*b for a,b in zip(new_L1,new_L2)]
+    covariance = sum(new_L3)/(len(new_L3)-1)
+    return covariance 
 
-def compute_hiepphuongsai():
-    pass 
-
-def compute_phuongsai():
-    pass
-
-def compute_correlation():
-    pass
+def compute_phuongsai(list_1):
+  if len(list_1) == 0:
+    print("Khong the tinh phuong sai")
+  else: 
+    avr_list_1 = sum(list_1)/len(list_1)
+    new_list = [pow((i-avr_list_1),2) for i in list_1]
+    variance =  sum(new_list)/len(new_list)
+    return variance
+def compute_correlation(L1,L2):
+    import statistics
+    import numpy as np
+    if len(L1)!=len(L2) or len(L1)==0 or len (L2)==0:
+        print("Khong the tinh correlation")
+    else:
+        covariance = np.cov(L1, L2)[0, 1]
+        std_dev_L1 = statistics.stdev(L1)
+        std_dev_L2 = statistics.stdev(L2)
+        correlation = covariance/(std_dev_L1*std_dev_L2)
+        return correlation
